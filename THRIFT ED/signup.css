@@ -1,0 +1,556 @@
+
+body{
+  max-width:  auto;
+  background-color: rgb(255, 255, 255);
+  height: 1600px;
+  font-family: Arial, sans-serif;
+}
+.brand {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  text-align: center;
+  right: 50px;
+  left: 0;
+  top: 48px;
+  font-size: 60px;
+  font-family: "Hoefler";
+
+
+}
+.top {
+  color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 25px;
+  z-index: 1; 
+  padding-bottom: 15px;
+}
+
+
+
+.con {
+  z-index: 10000; 
+  background-color: white;
+  border-radius: 18px;
+  padding-inline: 10px;
+  color: rgb(0, 0, 0);
+  font-family: "Hoefler";
+  position: fixed;
+  text-decoration: none;
+  font-size: 20px;
+  top: 15px;
+  left: 25px;
+  transition: .35s;
+  cursor:pointer;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+
+.con:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+
+.home{
+  background-color: white;
+  border-radius: 18px;
+  padding-inline: 10px;
+  color: rgb(0, 0, 0);
+  font-family: "Hoefler";
+  position: fixed;
+  text-decoration: none;
+  font-size: 20px;
+  top: 15px;
+  left: 250px;
+  transition: .35s;
+  cursor:pointer;
+}
+
+.home:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+
+.shop {
+  
+  margin-left: 50px;
+  margin-right: 50px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 18px;
+  padding-inline: 10px;
+  color: black;
+  font-family: "Hoefler";
+  text-decoration: none;
+  text-align: right;
+  font-size: 20px;
+  top: 15px;
+  position: fixed;
+  right: 5%;
+  transition: .35s;
+  cursor: pointer;
+}
+
+.shop:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+
+.searchbar{
+  z-index: 99999;
+  padding: 5px;
+  font-size: 16px; 
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 20px;
+  position: fixed ;
+  top: 90px;
+  width :  150px;
+  left: 20px;
+  transform: .35s;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+.searchbar:hover{
+  opacity: 1;
+  background-color:  rgb(242, 175, 248);
+  transform: translateY(-5px);
+}
+
+
+.signin {
+    background-color: #fff;
+    z-index: 99999;
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    top: 62px;
+    border-radius: 18px;
+    width: 90px;
+    border: 1px solid black;
+    padding: 0;
+    color: black;
+    font-family: "Hoefler";
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: .35s;
+    cursor: pointer;
+    
+}
+.signin:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+.signup{
+    background-color: #ffffff;
+    z-index: 99999;
+    display: inline;
+    right : 15%;
+    border-radius: 18px ;
+    width : 90px;
+    border: 1px solid black ;
+    padding: 0;
+    color: black;
+    position: fixed ;
+    font-family: "Hoefler";
+    text-decoration: none;
+    top: 0;
+    font-size: 18px;
+    top: 62px;
+    text-align : center ;
+
+    transition: .35s;
+    cursor: pointer;
+} 
+
+.item{
+  position : static ;
+    justify-content :space-evenly ;
+   left : 0;
+   right :0;
+   gap: 10px;
+   width: 50%;
+   top: -100px;
+   bottom :0;
+   margin: 0 auto;
+}
+.signup:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+
+/*Para style sa container*/
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1; 
+     margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width:  400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+  
+}
+
+
+.enter-email,.enter-password,.confirm-password{
+    
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #d4cccc;
+  outline: none;
+}
+.remember-me{
+  color: rgb(38, 12, 205);
+}
+hr {
+  border: 1px solid #a63b3b;
+  margin-bottom: 25px;
+}
+
+/* Set og syle sa mga button*/
+button {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+  border-radius: 29px;
+  cursor: pointer;
+ 
+}
+
+button:hover {
+  opacity:1;
+  transform: scale(.9);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    text-align: center;
+    justify-content: center;
+   text-decoration: none;
+  margin: 0%;
+   color: #fff;
+   
+}
+
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  .branding {
+    margin: auto;
+    display: flex ;
+    position: absolute ;
+    background-image: url(wall.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 75%;
+    height: 150px;
+    left : 0;
+    right :0;
+    top: 190px; 
+    padding: 150px;
+    padding-bottom: 50px;
+  }  
+
+  .qoute{
+    left :  0;
+    right : 0;
+    position : absolute ;
+    top: 40px;
+    font-size: 30px ;
+  }
+  .qoute2{
+    text-align: center;
+    left : 0;
+    right :0;
+    position : absolute ;
+    top: 70px;
+    font-size: 30px ;
+  }
+  .qoute,.qoute2{
+    text-shadow: 3px 2px hsl(0, 3%, 8%);
+    color: #f881f2;
+    text-align: center;
+  }
+  .newthisweek{
+    position: relative;
+    top: 450px;
+    bottom: 0%;
+    text-align: center;
+    font-size:  30px;
+    text-decoration-line: underline;
+    font-family: "Helvetica Neue", sans-serif;
+    transform: skew(-10deg);
+   
+  }
+  
+    .container1 {
+    margin-top: 500px;
+    display: grid ;
+    grid-template-rows: 200px  500px 200px;
+    grid-template-columns: 300px 300px 300px ;
+    justify-content: space-evenly ;
+    align-items: center ;
+    padding: 10px;
+    height: 0px;
+    width: 100% ;
+    
+  } 
+  .container1:hover >:not(:hover){
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+   .item{
+     position : static ;
+   
+     justify-content :space-evenly ;
+      left : 0;
+      right :0;
+      gap: 10px;
+      width: 50%;
+      top: -100px;
+      bottom :0;
+      margin: 0 auto;
+    }
+    
+  .item img {
+    transition: .35s;
+    cursor: pointer;
+    image-resolution:inherit ;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  
+  }
+    .price { 
+      color: black ;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center ;
+  
+    }
+
+  .abovefooter{
+
+   
+    padding-bottom: 150px;
+  position: relative;
+  top: 600px;
+  bottom: 100px;
+
+  }
+  .stay{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    bottom: o;
+    text-decoration-line: underline;
+  }
+.parag{
+  position: relative;
+    text-align: center;
+    justify-content: center;
+    bottom: o;
+
+}
+.bordernav{
+  position: relative;
+  display: flex-inline;
+  justify-content: center;
+  align-items: center;
+  bottom: -467px;
+  text-align: center;
+  margin: auto;
+
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+  height: 40px;
+  padding: 10px;
+  right: 0;
+  border-radius: 15px;
+  background-position: relative;
+}
+
+.email{
+
+  text-align: center;
+  padding-inline: 10px;
+  margin: auto;
+  position:absolute;
+  display: inline-block;
+  gap: 100px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  left: -110px;
+  right: 0;
+  width: 30% ;
+  top: 10px;
+  background-color: beige;
+  background-blend-mode: color;
+  padding: 10px;
+  border-radius: 10px;
+  
+
+}
+.bottomsignup{
+  text-align: center;
+  margin: auto;
+  position: relative; 
+  left: 70px;
+right: auto;
+top: 10px;
+
+
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-decoration: none;
+
+
+}
+.bottom{
+  margin-left: 50px;
+  font-style: none;
+  position: relative;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+}
+.bottom-con{
+  color: black;
+  display: flex;
+  float: right;
+  background-color: white;
+  border-radius: 18px;
+  padding-inline: 10px;
+  text-decoration: none;
+  font-family: "Hoefler";
+  margin-right: 135px;
+}
+
+.bottom-con:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+.bottom-shop{
+  display: flex;
+  float: left;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 18px;
+  padding-inline: 10px;
+  text-decoration: none;
+  font-family: "Hoefler";
+  margin-left: 40px;
+}
+
+.bottom-shop:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+.bottom-home{
+  display: flex;
+  float: left;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 18px;
+  padding-inline: 10px;
+  text-decoration: none;
+  font-family: "Hoefler";
+}
+
+.bottom-home:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+
+
+ 
+.dev{
+  padding-left: 20px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 18px;
+  padding-inline: 10px;
+  margin-right: 30px ;
+  text-decoration: none;
+  font-family: "Hoefler";
+  float: right;
+  
+}
+
+.dev:hover{
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 175, 248);
+  transform: translateY(-2px);
+}
+
+
+footer {
+  background-color: black ;
+  color: white ;
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+  width: 100%;
+}
+
+.foot-text{
+  margin-left: 41%;
+}
