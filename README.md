@@ -1,2 +1,2 @@
 # Thrift-ed
-Website 
+My first attemp 
